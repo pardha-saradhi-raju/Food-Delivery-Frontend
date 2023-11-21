@@ -44,7 +44,7 @@ const MenuDetails = () => {
             console.log(userData.hashedOwnerPassword)
 
             console.log("clicking submit : ", userData)
-            Axios.post('https://online-food-delivery-system.onrender.com/upload', userData)
+            Axios.post('https://food-delivery-app-8z61.onrender.com/upload', userData)
                 //  Axios.post('http://localhost:3000/upload', userData)
                 .then((res) => console.log(res))
                 .catch(err => console.log(err))
