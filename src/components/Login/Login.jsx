@@ -130,7 +130,9 @@ const Login = () => {
                     <h2 style={{ color: "magenta", margin: "30px 0" }}>Login Form</h2>
                     <Stack direction="column" alignItems="center" spacing={2}>
                         <TextField label="Email" required margin='normal' variant='filled' color='secondary' onChange={e => handlechange(e, 'email')}></TextField>
+                        <p>Test Email: abc@gmail.com</p>
                         <TextField label="Password" type='password' required margin='normal' variant='filled' color='secondary' onChange={e => handlechange(e, 'password')}></TextField>
+                        <p>Test Password: adc</p>
                         <FormControlLabel control={<Checkbox sx={{ '& .MuiSvgIcon-root': { fontSize: 28 } }} />} label="Check if ur an customer" onChange={() => setAsCustomer(!isCustomer)} />
                         <Button type='submit' variant="contained" component="label" onClick={checkUserExistence}> Submit </Button>
                         <Link to='/signupcust' style={{ textDecoration: "none" }}> <p className='c' style={{ color: "blue"}}>Create an account as a customer</p> </Link>
