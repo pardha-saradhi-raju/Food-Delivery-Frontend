@@ -78,7 +78,7 @@ const Home = () => {
             </div>
           </section>
         </main>
-        <Footer/>
+      <Footer/>
       </div>
     </>
   )
