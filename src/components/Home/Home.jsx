@@ -80,6 +80,7 @@ const Home = () => {
         </main>
 
 {/*         <ContactN/> */}
+        <Footer/>
       </div>
     </>
   )
