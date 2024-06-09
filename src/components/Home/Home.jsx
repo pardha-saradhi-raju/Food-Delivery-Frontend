@@ -78,8 +78,6 @@ const Home = () => {
             </div>
           </section>
         </main>
-
-{/*         <ContactN/> */}
         <Footer/>
       </div>
     </>
