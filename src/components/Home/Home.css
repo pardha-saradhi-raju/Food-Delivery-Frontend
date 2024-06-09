@@ -1,15 +1,19 @@
-.container {
-    max-width: 100%;
-    /* margin: 0 auto; */
-}
 
+.container {
+    width: 100%;
+    /* margin: 0 auto; */
+    /* margin:0%;
+    padding: 0%; */
+    overflow-x: hidden;
+}
 
 .search-section {
     background-image: url("./../../assets/pexels.jpg");
     background-size: cover;
     padding-top: 10%;
     padding-bottom: 20%;
-    margin-bottom: -20px;;
+    margin-bottom: -20px;
+    flex-direction: column;
 }
 
 .search-section h1 {
@@ -20,10 +24,9 @@
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-right: 850px;
+    align-items: center; 
 }
 
 .search-bar .inp {
@@ -31,7 +34,7 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     width: 300px;
-    margin-right: 10px;
+    margin-bottom: 10px; /* Adjusted for better spacing */
 }
 
 .search-bar .btnn {
@@ -41,6 +44,7 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-top: 10px; /* Adjusted for better spacing */
 }
 
 .search-bar .btnn:hover {
@@ -55,13 +59,15 @@
     margin: -5px;
 }
 
-.options{
+.options {
     display: flex;
     gap: 50px;
+    flex-wrap: wrap; /* Added to wrap items on smaller screens */
+    justify-content: center; /* Center items on smaller screens */
 }
 
 .services h2 {
-    padding-top:30px;
+    padding-top: 30px;
     margin-bottom: 20px;
     color: rgb(212, 34, 212);
 }
@@ -72,44 +78,51 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 250px;
+    height: auto; /* Changed to auto to allow flexible height */
+    flex-wrap: wrap; /* Added to wrap items on smaller screens */
 }
 
-.serviceOne,.serviceTwo,.serviceThree {
+.serviceOne, .serviceTwo, .serviceThree {
     padding: 20px;
+    flex: 1; /* Added to make services equal width */
+    min-width: 250px; /* Added to ensure minimum width */
+    margin-bottom: auto;
+
 }
 
-
-@media screen and (max-width : 992px) {
-    .search-bar .inp {
-        margin-left: 0;
-    }
-
-    .search-bar .btnn {
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-
+/* Responsive styles */
+@media screen and (max-width: 992px) {
     .search-bar {
-        display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        margin-top: 20px;
     }
 
-    .search-bar inp {
-        margin: 0;
+    .search-bar .inp, .search-bar .btnn {
+        margin: 10px 0;
+        width: 80%; /* Adjusted to make inputs more responsive */
+    }
+    .container {
+        max-width: 100%;
+        /* margin: 0 auto; */
+        margin:0%;
+        padding: 0%;
     }
 }
 
-@media screen and (max-width:620px) {
-    .service-container{
+@media screen and (max-width: 620px) {
+    .service-container {
         flex-direction: column;
     }
 
-    .serviceOne,.serviceTwo,.serviceThree {
+    .serviceOne, .serviceTwo, .serviceThree {
         border: solid 2px #eaeaea;
         margin-bottom: 10px;
+    }
+
+    .container {
+        max-width: 100%;
+        /* margin: 0 auto; */
+        /* margin:0%;
+        padding: 0%; */
     }
 }
