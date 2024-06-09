@@ -79,7 +79,7 @@ const Home = () => {
           </section>
         </main>
 
-        <ContactN/>
+{/*         <ContactN/> */}
       </div>
     </>
   )
