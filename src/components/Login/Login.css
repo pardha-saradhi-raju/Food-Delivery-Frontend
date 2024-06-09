@@ -1,7 +1,8 @@
-.logincontainer{
+/* .logincontainer{
     display: flex;
     width: 100%;
     flex-wrap: wrap;
+    overflow-x: hidden;
  }
 
  .loginimg{
@@ -9,19 +10,20 @@
     height: 500px;
     margin-left: 10px; 
     border-radius: 8px; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
  #abcd2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Center content vertically on the page */
-    background-color: #f4f4f4; /* Add a background color */
-  }
+    height: 100vh; 
+    background-color: #f4f4f4;
+    
+ }
   
   #logindiv {
     width: 90%;
-    max-width: 400px; /* Limit the maximum width for better readability */
+    max-width: 400px; 
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
@@ -51,7 +53,7 @@
   }
   
   Button:hover {
-    background-color: #ff66b2; /* Lighter shade of magenta on hover */
+    background-color: #ff66b2; 
   }
   
   .c {
@@ -73,4 +75,138 @@
       margin-top: 10px;
     }
   }
-  
+   */
+
+
+
+
+
+
+
+
+
+
+
+.logincontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #f4f4f4;
+}
+
+.loginimg {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    /* margin: 20px 100px 20px 20px; */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#abcd2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    background-color: #f4f4f4;
+}
+
+#logindiv {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h2 {
+    color: magenta;
+    margin: 20px 0;
+}
+
+.TextField {
+    margin: 15px 0;
+    width: 100%;
+}
+
+Button {
+    background-color: magenta;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+Button:hover {
+    background-color: #ff66b2;
+}
+
+.c {
+    text-decoration: none;
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.c:hover {
+    text-decoration: underline;
+    color: magenta;
+}
+
+@media (max-width: 768px) {
+    .logincontainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-right: 40px;
+    width: 100%;
+    }
+
+    #abcd2 {
+        margin-top: 20px;
+    }
+
+    .loginimg {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    #logindiv {
+        margin-top: 10px;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .logincontainer {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-right: 40px;
+    width: 100%;
+  }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    Button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .loginimg {
+        max-width: 300px;
+        margin: 10px;
+    }
+}
