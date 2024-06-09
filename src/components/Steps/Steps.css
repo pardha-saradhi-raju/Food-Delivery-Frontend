@@ -41,8 +41,41 @@ body {
     max-width: 500px;
 }
 
-@media screen and (max-width: 674px) {
+
+/* .details{
+    margin:
+        margin: "0 auto"       display: "flex", 
+        flexDirection: "column" 
+} */
+
+
+.details{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
     #con {
         width: 90%;
+    }
+    .details{
+        /* margin: 0 auto; */
+        display: flex;
+        flex-direction: column;
+    
+    }
+}
+
+@media screen and (max-width: 380px) {
+    #con {
+        width: 90%;
+    }
+    .details{
+        /* margin: 0 auto; */
+        display: flex;
+        flex-direction: column;
     }
 }
