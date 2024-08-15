@@ -1,6 +1,3 @@
-Here's the content formatted for a GitHub `README.md` file, with all the code in the correct font using Markdown syntax:
-
----
 
 ## Project Setup Instructions
 
@@ -81,6 +78,3 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 - [Deployment](https://facebook.github.io/create-react-app/docs/deployment)
 - [Troubleshooting Build Failures](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
----
-
-You can directly copy and paste this content into your `README.md` file on GitHub.
